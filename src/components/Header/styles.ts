@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 
 export const Container = styled.header`
-  background: gray;
+  background: #1A1F38;
   display: flex;
-  padding: 1.2em;
+  padding: 1em;
 `
 
 export const Content = styled.nav`
@@ -13,19 +13,26 @@ export const Content = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1em;
 `
 
 export const Logo = styled.div`
-
+  h1{
+    color :yellow;
+    text-align: left;
+  }
 `
 
 export const WrapperInput =  styled.div`
-  display: flex;
-  max-width: 15em;
+  max-width: 17em;
   width: 100%;
+  background: white;
 
-  input{
-    padding: 0.5em;
-    width:100%;
-  }
+
+  display: flex;
+  align-items: center;
+  padding:  0.5em 0.8em;
+
+  border: 0;
+  border-radius: 1em;
 `

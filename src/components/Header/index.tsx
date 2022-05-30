@@ -1,4 +1,7 @@
 import React from  'react'
+
+import {MdSearch} from 'react-icons/md'
+import InputSearch from './InputSearch'
 import {Container, Content, Logo, WrapperInput} from './styles'
 
 export default function Header(){
@@ -7,10 +10,11 @@ export default function Header(){
       <Container>
         <Content>
             <Logo>
-              <h1>logo</h1>
+              <h1>Whatchlist Movies</h1>
             </Logo>
             <WrapperInput>
-              <input type="text" />
+              <InputSearch/>
+              <MdSearch size={20} opacity={0.5}/> 
             </WrapperInput>
         </Content>
       </Container>
