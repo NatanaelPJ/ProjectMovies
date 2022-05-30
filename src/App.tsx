@@ -1,26 +1,62 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/Header';
+import { api } from './services/api';
 
-function App() {
+import { GlobalStyle } from './styles/global';
+
+
+interface  PropsMovies {
+  adult: boolean;
+  backdrop_path: string;
+  genre_ids: number[];
+  id: number;
+  original_language: string;
+  original_title: string;
+  overview: string;
+  popularity: number;
+  poster_path: string;
+  release_date: string;
+  title: string;
+  video: boolean;
+  vote_average: number;
+  vote_count: number;
+}
+
+
+export default function App() {
+
+  const [movies, setMovies] = useState<PropsMovies[]>([]);
+  
+  useEffect(() => {
+    async function loadApi(){
+      let response = await api.get('/popular')
+  
+
+      setMovies(response.data.results)
+    }
+    loadApi()
+  },[])
+ 
+
+  movies.map((movie) =>  console.log('movie', movie))
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <GlobalStyle />
+    <BrowserRouter>
+      <Header/>
+     
+    </BrowserRouter>
+    </>
   );
 }
 
-export default App;
+        //Exibir dados da Api = ok!
+
+      /* <ul>
+        {movies.map((movie) => (
+              <li key={movie.id}> {movie.overview} </li>
+        ))}
+      </ul> */
