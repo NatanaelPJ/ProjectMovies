@@ -12,11 +12,25 @@ export const Container = styled.div`
  ul{
    display: flex;
    align-items: center;
-   text-align: center;
+   justify-content: center;
 
-   
+
    background: gray;
    width: 14.75em;
    height: 22.75em;
+   position: relative;
+
+  li{
+    color: yellow;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+  }
+
+   img{
+     width: 100%;
+     height: 100%;
+     opacity: 0.8;
+   }
  }
 `

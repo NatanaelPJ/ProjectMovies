@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-  height: 100vh;
+  height: calc(100vh - 4.25em);
   display: flex;
 
-
-  /* @media (max-width:800px) {
+  @media (max-width:600px) {
     flex-direction: column;
-  } */
+  }
 `

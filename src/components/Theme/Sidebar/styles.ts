@@ -12,10 +12,15 @@ export const Container = styled.div`
 
     display: flex;
     align-items: right;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow:column wrap;
     flex: 1;
     gap: 1em;
+
+
+    @media (max-width:600px) {
+      flex-flow:row wrap;
+    }
 
     li {
       a{

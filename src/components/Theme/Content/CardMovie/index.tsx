@@ -28,13 +28,9 @@ export default function CardInfo(){
   
   useEffect(() => {
     async function loadApi(){
-      let response = await api.get('/')
-      
-      let results = response.data.results
-      setResults(results)
+      let response = await api.get('/movie/popular')
 
-      console.log(results);
-      
+      setResults(response.data.results)
     }
 
 
@@ -46,7 +42,7 @@ export default function CardInfo(){
   
  
 
-  results.map((result) =>  console.log('movie', result))
+  results.map((results) =>  console.log('movie', results))
   console.log(results);
   
 
@@ -55,9 +51,10 @@ export default function CardInfo(){
     <>
      <Container>
         {results.map((movie) => (
-              <ul key={movie.id}>
-                <li> {movie.title}</li>
-              </ul>
+          <ul key={movie.id}>
+            <li> {movie.title}</li>
+            <img src="https://images.unsplash.com/photo-1653920981184-2793fb1f76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" alt="" />
+          </ul>
         ))}
      </Container>
     </>
