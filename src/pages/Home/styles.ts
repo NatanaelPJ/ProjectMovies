@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  height: 100%;
-  width: 100%;
-  background: black;
-`
 
 export const Content = styled.div`
   height: calc(100vh - 4.25em);
@@ -22,7 +17,6 @@ export const WrapperContentMovies = styled.div`
   width: 100%; 
   display: flex;
   flex: 5;
-  background: black;
 
   overflow-y: auto;
 

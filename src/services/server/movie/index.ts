@@ -6,3 +6,10 @@ export const getMovies = async (): Promise<Movies[]> => {
   console.log("RESPONSE", response.data)
   return response.data.results
 }
+
+
+export const getMovieInfo = async (): Promise<Movies[]> => {
+  const response = await api.get('/movie')
+  console.log("RESPONSEMovieInfo", response.data)
+  return response.data.results
+}

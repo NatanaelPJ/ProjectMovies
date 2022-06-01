@@ -33,7 +33,7 @@ export function MovieProvider({children} : MovieProviderProps ){
       return;
     }
     
-    const newMovies = movies.filter((item) => {
+    const newMovies = originalMovies.filter((item) => {
       const filterName = cleanString(filters.movieName)
       const title = cleanString(item.title)
 

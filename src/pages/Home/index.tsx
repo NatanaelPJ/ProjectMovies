@@ -1,29 +1,25 @@
 import React from "react";
 
 import { 
-  Container, 
-  Content, 
+  Content,
   WrapperContentMovies
 } from "./styles";
 
 import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
-import CardMovie from "../../components/CardMovie";
-import Footer from "../../components/Footer";
+import CardMovie from "../../components/ContentMovies";
 
 
 export default function Home() {
   return (
     <>
-      <Container>
-        <Header/>
-        <Content>
-          <Sidebar />
-          <WrapperContentMovies>
-              <CardMovie/>
-          </WrapperContentMovies>
-        </Content>
-      </Container>
+      <Header/>
+      <Content>
+        <Sidebar />
+        <WrapperContentMovies>
+            <CardMovie/>
+        </WrapperContentMovies>
+      </Content>
     </>
   )
 }
