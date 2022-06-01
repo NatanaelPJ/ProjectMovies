@@ -9,7 +9,7 @@ export default function Routes() {
     <>
       <Switch>
         <Route path='/' element={ <Home />}></Route>
-        <Route path='/' element=''></Route>
+        <Route path='/filme' element=''></Route>
         <Route path='/' element=''></Route>
         <Route></Route>
       </Switch>

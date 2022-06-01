@@ -1,15 +1,10 @@
-import React from 'react';
+import { Container } from "./styles"
 
-import { Container, Content } from './styles';
-
-
-export default function(){
-  return(
+export default function Footer(){
+  return (
     <>
       <Container>
-        <Content>
-          
-        </Content>
+          <h1>Footer</h1>
       </Container>
     </>
   )

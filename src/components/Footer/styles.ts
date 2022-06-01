@@ -1,8 +1,9 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 
 export const Container = styled.footer`
-display: flex;
-`
+  display: flex;
+  flex: 1;
+  background: blue;
 
-export const Content = styled.div``
+`

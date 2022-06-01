@@ -19,6 +19,11 @@ export const GlobalStyle = createGlobalStyle`
   input{
     outline: none;
   }
+
+  body{
+    width: 100%;
+    height: 100%;
+  }
 `
 
 

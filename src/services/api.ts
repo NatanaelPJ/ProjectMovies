@@ -6,7 +6,6 @@ export const api = axios.create({
   params:{
     api_key: api_key,
     language:'pt-BR',
-    include_image_language: 'en,null',
-    maxContentLength: 600
+    include_image_language: 'pt,null',
   }
 })

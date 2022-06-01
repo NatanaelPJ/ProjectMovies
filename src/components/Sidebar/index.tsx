@@ -6,22 +6,22 @@ export default function Sidebar(){
      <Container>
         <ul>
           <li>
-            <a href="#" aria-details="AAAA"> Todos</a>
+            <a href="#" aria-details="AAAA">Todos</a>
+          </li>
+          <li>
+            <a href="#" aria-details="AAAA">Ação</a>
           </li>
           <li>
             <a href="#" aria-details="AAAA">Comedia</a>
           </li>
           <li>
-            <a href="#" aria-details="AAAA">Terror</a>
+            <a href="#" aria-details="AAAA">Desenho</a>
           </li>
           <li>
             <a href="#" aria-details="AAAA">Romance</a>
           </li>
           <li>
-            <a href="#" aria-details="AAAA">aaaaaa</a>
-          </li>
-          <li>
-            <a href="#" aria-details="AAAA">eaaaaaaaaaaaatc</a>
+            <a href="#" aria-details="AAAA">Terror</a>
           </li>
         </ul>
      </Container>
