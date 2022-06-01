@@ -23,7 +23,6 @@ export default function Home() {
               <CardMovie/>
           </WrapperContentMovies>
         </Content>
-        <Footer/>
       </Container>
     </>
   )

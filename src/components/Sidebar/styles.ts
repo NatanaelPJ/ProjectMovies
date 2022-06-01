@@ -3,23 +3,26 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex: 1;
-  justify-content: center;
-  padding: 0;
+ 
 
-  @media (max-width:601px) {
+  @media (max-width:1120px) {
     border-right: 1px solid gray;
   }
 
   ul{
-    max-width: 40em;
-    padding: 0;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: left;
+    justify-content: space-evenly;
     flex-flow: column wrap;
     flex: 1;
     gap: 1em;
-    padding: 0 1em;
+    padding: 2em 1em;
+
+    @media (max-width: 600px) {
+      flex-direction: row;
+      padding: 1em;
+  }
 
     li {
       max-width: 6em;

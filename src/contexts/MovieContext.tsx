@@ -39,7 +39,7 @@ export function MovieProvider({children} : MovieProviderProps ){
 
       if (title.includes(filterName)) {
         return item;
-      }
+      } 
 
       return false
     })
@@ -73,7 +73,7 @@ export function MovieProvider({children} : MovieProviderProps ){
   }
 
   return (
-    <MoviesContext.Provider value={{ movies, loadMovies, addFilter }}>
+    <MoviesContext.Provider value={{ movies, loadMovies, addFilter, }}>
       {children}
     </MoviesContext.Provider>
   )

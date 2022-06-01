@@ -4,28 +4,33 @@ import styled from "styled-components";
 //   backdrop_path: string
 // }
 export const Container = styled.div`
+  width: 100%;
+
   display: flex;
-  
-  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4em;
+
 
   ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 22.75em;
     position: relative;
-    background: gray;
 
     li{
-      color: yellow;
+      margin-top: 1em;
+      color: white;
       text-align: center;
     }
 
     img{
-      max-height: 100%;
-      width: auto;
-      object-fit: contain;
+      max-width: 20em;
+      height: 20em;
+      width:100%;
+      object-fit: cover;
     }
   }
 `

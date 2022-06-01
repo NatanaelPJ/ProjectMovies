@@ -4,14 +4,15 @@ import { Input } from "./styles"
 
 
 export default function InputSearch() {
-  const [query, setQuery] = useState('')
 
+  const [query, setQuery] = useState('')
   const { addFilter } = useContextMovie()
 
-  const handleInputChange = (e : ChangeEvent<HTMLInputElement>) => {
-    setQuery(e.target.value)
+  let handleInputChange = (e : ChangeEvent<HTMLInputElement>) => {
+    let currentValue = e.target.value
 
-    addFilter('movieName', e.target.value)
+    setQuery(currentValue)
+    addFilter('movieName', currentValue)
   }
 
   return (

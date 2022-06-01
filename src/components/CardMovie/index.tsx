@@ -17,8 +17,8 @@ export default function CardMovie(){
       <Container>
         {movies.map((movie) => (
           <ul key={movie.id}>
-            <li>{movie.title}</li>
             <img src={movie.image} alt="" />
+            <li>{movie.title}</li>
           </ul>
         ))}
       </Container>
