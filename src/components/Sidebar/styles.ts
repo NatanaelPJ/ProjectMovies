@@ -26,6 +26,7 @@ export const Container = styled.div`
 
     li {
       max-width: 6em;
+
       a{
         width: 100%;
         font-size: 1.2em;

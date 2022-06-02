@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-
-export const Content = styled.div`
+export const Content = styled.main`
   height: calc(100vh - 4.25em);
   width: 100%;
   display: flex;

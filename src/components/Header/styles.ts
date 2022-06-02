@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 
 export const Container = styled.header`
-  background: #1A1F38;
   display: flex;
   justify-content: center;
   padding: 1em;
+  border-bottom: 1px solid gray;
 
 
   @media (min-width: 800px) {
