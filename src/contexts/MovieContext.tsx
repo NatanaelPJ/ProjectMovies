@@ -65,7 +65,7 @@ export function MovieProvider({children} : MovieProviderProps ){
     setOriginalMovies(data)
   }
 
-  function addFilter (filterName: 'movieName', value: any) {
+  function addFilter (filterName: 'movieName' | 'generoID', value: any) {
     setFilters({
       ...filters,
       [filterName]: value ? value : ''

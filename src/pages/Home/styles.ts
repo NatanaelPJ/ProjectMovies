@@ -16,11 +16,10 @@ export const WrapperContentMovies = styled.div`
   width: 100%; 
   display: flex;
   flex: 5;
-
+  
   overflow-y: auto;
 
   &::-webkit-scrollbar{
     display: none;
-
   }
 `

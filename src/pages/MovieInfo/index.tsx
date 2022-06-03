@@ -6,28 +6,37 @@ import { Movies } from "../../services/server/movie/types"
 import { Container, Content, ContentMovie } from "./styles"
 
 
+
 export default function MovieInfo(){
 
   const {id} = useParams()
   const navigate = useNavigate()
 
-  const [movieInfo, setMovieInfo] = useState<Movies[]>([])
-  
-  useEffect(() => {
-    async function loadApi(){
-      let response = await getMovieId(id)
-      if(response.length === 0){
-         return navigate('/')
-      }
-      setMovieInfo(response)
-      console.log('Item', response.length);
-    }
-    loadApi()
-    return () => {
-      console.log('Componente desmontado')
-    }
-  },[])
+  const [movieInfo, setMovieInfo] = useState<Movies>({} as Movies)
 
+  useEffect(() => {
+
+    if(!id) return
+    
+    async function loadApi(){
+      const response = await getMovieId(id)
+
+      const data = {
+          ...response,
+          image: `https://image.tmdb.org/t/p/w500${response.backdrop_path}`
+      }
+
+      setMovieInfo(data)
+      console.log('respotaFilme', data);  
+    }
+
+    loadApi()
+  
+  },[id])
+
+  function returnHomepage(){
+    return navigate('/')
+  }
 
   console.log('var', movieInfo);
   
@@ -36,12 +45,14 @@ export default function MovieInfo(){
      <Container>
         <Content>
           <ContentMovie>
+            <img src={movieInfo.image} alt="" />
           </ContentMovie>
           <button>
-            <a target="blank" href={`https://youtube.com/results?search_query=${''} Trailer`}>
+            <a target="blank" href={`https://youtube.com/results?search_query=${movieInfo.title} Trailer`}>
               Trailer
             </a>
           </button>
+          <button onClick={returnHomepage}>Voltar</button>
         </Content>
       </Container>
     </>
