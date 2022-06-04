@@ -15,7 +15,7 @@ export const WrapperContentMovies = styled.div`
   padding: 4em 2em;
   width: 100%; 
   display: flex;
-  flex: 5;
+  flex: 4;
   
   overflow-y: auto;
 

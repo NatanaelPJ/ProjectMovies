@@ -3,7 +3,6 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle` 
   width: 100%;
   height: 100%;
-
   *{
     margin: 0;
     padding: 0;
@@ -26,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
   body{
     width: 100%;
     height: 100%;
-    background: #1A1F38;
+    background: #1f2229;
     font-family: 'Roboto', Helvetica, sans-serif;
   }
 `

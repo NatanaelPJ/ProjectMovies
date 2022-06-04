@@ -5,7 +5,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: center;
   padding: 1em;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #2e303c;
 
 
   @media (min-width: 800px) {

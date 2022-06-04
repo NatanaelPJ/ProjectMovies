@@ -5,7 +5,6 @@ import styled from "styled-components";
 // }
 export const Container = styled.div`
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,24 +12,34 @@ export const Container = styled.div`
   gap: 4em;
 
 
-  ul{
+  article{
+    max-width: 14.31em;
+    width: 100%;
+    height: 24em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 22.75em;
+    align-items: center;  
+    justify-content: center ;
     position: relative;
-
-    li{
-      margin-top: 1em;
-      color: white;
-      text-align: center;
-    }
-
+    
     img{
-      max-width: 20em;
-      height: 20em;
+      flex: 1;
+      height: 21.25em;
       width:100%;
       object-fit: cover;
+      opacity: 0.5;
+    }
+
+    p{
+      width: 100%;
+      color: yellow;
+      font-size: 1.2em;
+      text-align: center;
+
+      position: absolute;
+      bottom:10%;
+
+     
     }
   }
 `

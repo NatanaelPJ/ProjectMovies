@@ -20,10 +20,9 @@ export default function CardMovie(){
         {movies.map((movie) => (
           <article key={ movie.id }>
             <Link to={`/filme/${ movie.id }`}>
-              <ul >
-                <img src={ movie.image } alt="" />
-                <li>{ movie.title} </li>
-              </ul>
+              <img src={ movie.image } alt="" />
+              <p>{ movie.title}</p>
+           
             </Link>
           </article>
         ))}

@@ -3,11 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex: 1;
- 
-
-  @media (max-width:1120px) {
-    border-right: 1px solid gray;
-  }
+  background: #2e303c;
 
   ul{
     width: 100%;
@@ -25,12 +21,17 @@ export const Container = styled.div`
   }
 
     li {
-      max-width: 6em;
-
+      padding: 1em;
+      width:100%;
+      background: #373945;
+      display: flex;
+      
       a{
         width: 100%;
         font-size: 1.2em;
         color: yellow;
+        display: flex;
+        justify-content: space-between;
       }
     }
   }

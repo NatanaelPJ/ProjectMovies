@@ -15,7 +15,6 @@ export default function Home() {
     <>
       <Header/>
       <Content>
-        <Sidebar />
         <WrapperContentMovies>
             <CardMovie/>
         </WrapperContentMovies>
