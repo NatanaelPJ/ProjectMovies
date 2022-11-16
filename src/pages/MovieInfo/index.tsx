@@ -1,10 +1,10 @@
-import React from "react"
 import { useEffect, useState } from "react"
 import { useParams, useNavigate  } from "react-router-dom"
 import { getMovieId } from "../../services/server/movie"
 import { Movies } from "../../services/server/movie/types"
 import { Container, Content, ContentMovie,Presentation } from "./styles"
 import {MdKeyboardBackspace} from 'react-icons/md' 
+
 
 export default function MovieInfo(){
   const {id} = useParams()

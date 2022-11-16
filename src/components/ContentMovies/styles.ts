@@ -4,6 +4,7 @@ import styled from "styled-components";
 //   backdrop_path: string
 // }
 export const Container = styled.div`
+max-width: 1120px;
   width: 100%;
   display: flex;
   align-items: center;

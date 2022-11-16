@@ -22,7 +22,6 @@ export default function CardMovie(){
             <Link to={`/filme/${ movie.id }`}>
               <img src={ movie.image } alt="" />
               <p>{ movie.title}</p>
-           
             </Link>
           </article>
         ))}

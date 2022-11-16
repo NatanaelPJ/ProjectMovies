@@ -2,9 +2,7 @@ import { Container } from "./styles"
 import * as icon from 'react-icons/md'
 
 export default function Sidebar(){
-
-
-
+  
   return(
     <>
      <Container>

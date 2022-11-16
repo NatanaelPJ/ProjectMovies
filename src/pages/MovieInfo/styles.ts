@@ -5,7 +5,7 @@ export const Container = styled.main`
   width: 100%;
   display: flex;
   color: white;
-
+  
 `
 
 export const Content = styled.article`
@@ -17,7 +17,6 @@ export const Content = styled.article`
   @media (max-width: 767px) {
     flex-direction: column;
   }
- 
 `
 
 export const ContentMovie = styled.figure`
