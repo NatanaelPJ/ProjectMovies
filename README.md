@@ -7,11 +7,11 @@
 ## 💻 Tecnologias e Bibliotecas
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
-- HTML5 - Linguagem de marcação de texto
-- React -  Biblioteca usada para construir a interface de usuário
-- React-router-dom - Biblioteca que permite fazer o roteamento das páginas da aplicação de forma dinâmica
-- TypeScript - Linguagem de programação usada na criação do projeto
-- Styled-components - Biblioteca que possibilita escrever códigos CSS dentro do JavaScript
+- HTML5
+- React 
+- React-router-dom 
+- TypeScript 
+- Styled-components 
 
 
 ## Rodando localmente
@@ -45,17 +45,27 @@ Inicie o projeto
 
 ## ⚙ Funcionalidades
 
-### Input de pesquisa
-O usuário pode buscar um filme através do input de pesquisa. Onde o mesmo filtra o array onde se encontra os dados armazedos dos filmes que foram consumidos da api.
+[x] Usuário pode buscar um filme através do input de pesquisa. 
 
-### Rotamento dinamico através do id do filme
-Ao clicar em um banner aleatório, o usuário é direcionado para outra rota, onde verá algumas informações sobre o filme e terá a opção de redireciona-lo para o trailer do mesmo no youtube.
+[x] Navegar para pagina de informação do filme através do ID.
+
+[x] Botão que navega para para o youtube e mostra o trailer do filme.
 
 
-Aqui você pode visualizar o deploy do projeto: [whatch-list-movies](https://whatch-list-movies.netlify.app
-)
+
+## Desenvolvido por
+
+<div>
+  <img src="https://avatars.githubusercontent.com/u/93483868?v=4" width="48" height="48">
+  Natanael de Paulo
+</div>
+  
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/natanael-de-paulo/)
+[![github](https://img.shields.io/badge/github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Natanael-de-Paulo)
+
 
 ## Status do projeto
-Em desenvolvimento
-
+Em desenvolvimento...
+Aqui você pode visualizar o deploy do projeto: [whatch-list-movies](https://whatch-list-movies.netlify.app
+)
 
